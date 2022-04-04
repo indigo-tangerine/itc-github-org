@@ -16,6 +16,10 @@ variable "aws_role_external_id" {
   sensitive   = true
 }
 
+variable "github_app_id" {}
+variable "github_installation_id" {}
+variable "github_pem_file" {}
+
 variable "stage" {
   type    = string
   default = "dev"
