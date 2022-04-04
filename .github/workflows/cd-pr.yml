@@ -30,3 +30,6 @@ jobs:
       aws-secret-access-key: ${{ secrets.CICD_AUTOMATION_AWS_SECRET_ACCESS_KEY }}
       aws-cicd-automation-role-external-id: ${{ secrets.ITC_AWS_IAM_EXTERNAL_ID }}
       aws-cicd-automation-github-role: ${{ secrets.CICD_AUTOMATION_GITHUB_ACTIONS_ROLE }}
+      github-app-id: ${{ secrets.TFM_GITHUB_APP_ID }}
+      github-installation-id: ${{ secrets.TFM_GITHUB_APP_INSTALLATION_ID }}
+      github-pem-file: ${{ secrets.TFM_GITHUB_APP_PEM_FILE }}
