@@ -1,6 +1,10 @@
 provider "github" {
   owner = "indigo-tangerine"
-  app_auth {}
+  app_auth {
+    installation_id = var.github_installation_id
+    id              = var.github_app_id
+    pem_file        = var.github_pem_file
+  }
 }
 
 provider "aws" {
