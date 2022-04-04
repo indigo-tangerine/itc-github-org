@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## [v0.2.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.2.0) - 2022-04-04 17:33:08
+
+*No description*
+
+### Feature
+
+- general:
+  - github change workflow ([c96ebfc](https://github.com/indigo-tangerine/itc-github-org/commit/c96ebfc1f98e3ddfec615acc7d26ac823cf9968d)) ([#3](https://github.com/indigo-tangerine/itc-github-org/pull/3))
+  - fix cd worfklow ([91bb428](https://github.com/indigo-tangerine/itc-github-org/commit/91bb4286a333e6652100d119196d927e215c1ddd)) ([#2](https://github.com/indigo-tangerine/itc-github-org/pull/2))
+
+### Bug Fixes
+
+- general:
+  - bump ([b613fdd](https://github.com/indigo-tangerine/itc-github-org/commit/b613fdd2463e65c71fa956e46cc298635b22f98c))
+
 ## [v0.1.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.1.0) - 2022-04-04 15:49:39
 
 *No description*
