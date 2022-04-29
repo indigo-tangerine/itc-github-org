@@ -89,6 +89,11 @@ resource "github_branch_protection" "main" {
     dismiss_stale_reviews           = true
     require_code_owner_reviews      = true
     required_approving_review_count = try(each.value.required_pull_request_reviews.required_approving_review_count, 2)
+    pull_request_bypassers = concat(
+      try(each.value.required_pull_request_reviews.pull_request_bypassers, null),
+      [github_team.codeowners.node_id]
+    )
+
   }
 
   depends_on = [

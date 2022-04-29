@@ -31,3 +31,5 @@ override.tf.json
 scripts/
 
 terraform/.terraform.lock.hcl
+
+terraform/tfm.plan
