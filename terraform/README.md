@@ -21,6 +21,7 @@
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_tfm_modules"></a> [tfm\_modules](#module\_tfm\_modules) | ./modules/gh_repo | n/a |
+| <a name="module_tfm_projects"></a> [tfm\_projects](#module\_tfm\_projects) | ./modules/gh_repo | n/a |
 
 ### Resources
 
