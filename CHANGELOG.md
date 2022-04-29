@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [v0.3.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.3.0) - 2022-04-29 20:01:15
+
+*No description*
+
+### Feature
+
+- general:
+  - add template repos, update workflows ([e67c9e8](https://github.com/indigo-tangerine/itc-github-org/commit/e67c9e84eb2749dfcda7b5b1e090c4f8f4654e6b)) ([#4](https://github.com/indigo-tangerine/itc-github-org/pull/4))
+  - add template repos, update workflows ([bbbdf20](https://github.com/indigo-tangerine/itc-github-org/commit/bbbdf20204c9dd18bc784b837a25aa989c15c430)) ([#4](https://github.com/indigo-tangerine/itc-github-org/pull/4))
+
 ## [v0.2.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.2.0) - 2022-04-04 17:33:08
 
 *No description*
