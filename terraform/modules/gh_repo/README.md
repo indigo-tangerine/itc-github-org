@@ -64,6 +64,7 @@ No modules.
 | <a name="input_ecr_put_permissions_allowed_accounts"></a> [ecr\_put\_permissions\_allowed\_accounts](#input\_ecr\_put\_permissions\_allowed\_accounts) | List of AWS accounts allowed to push to ECR repository | `list(any)` | `[]` | no |
 | <a name="input_ecr_repositories"></a> [ecr\_repositories](#input\_ecr\_repositories) | Map of ECR repository variables | `map(any)` | <pre>{<br>  "ecr-name": {<br>    "encryption_configuration": {<br>      "encryption_type": "AES256",<br>      "kms_key": null<br>    },<br>    "image_scanning_configuration": {<br>      "scan_on_push": true<br>    },<br>    "image_tag_mutability": "IMMUTABLE"<br>  }<br>}</pre> | no |
 | <a name="input_gh_team_admins_id"></a> [gh\_team\_admins\_id](#input\_gh\_team\_admins\_id) | n/a | `string` | n/a | yes |
+| <a name="input_gh_team_admins_node_id"></a> [gh\_team\_admins\_node\_id](#input\_gh\_team\_admins\_node\_id) | n/a | `string` | n/a | yes |
 | <a name="input_gh_team_admins_slug"></a> [gh\_team\_admins\_slug](#input\_gh\_team\_admins\_slug) | n/a | `string` | n/a | yes |
 | <a name="input_gh_team_developers_id"></a> [gh\_team\_developers\_id](#input\_gh\_team\_developers\_id) | n/a | `string` | n/a | yes |
 | <a name="input_github_org"></a> [github\_org](#input\_github\_org) | Github Organization name | `string` | n/a | yes |
