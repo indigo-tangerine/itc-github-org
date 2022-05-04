@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [v0.4.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.4.0) - 2022-05-04 19:17:56
+
+*No description*
+
+### Feature
+
+- general:
+  - add templates ([2cc549b](https://github.com/indigo-tangerine/itc-github-org/commit/2cc549b8a7d35df65fdc9e604f58d150e68fdd52)) ([#5](https://github.com/indigo-tangerine/itc-github-org/pull/5))
+  - add templates ([6d2b7f6](https://github.com/indigo-tangerine/itc-github-org/commit/6d2b7f664ad71812dd1a137d7817ee81caa59848)) ([#5](https://github.com/indigo-tangerine/itc-github-org/pull/5))
+
 ## [v0.3.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.3.0) - 2022-04-29 20:01:15
 
 *No description*
