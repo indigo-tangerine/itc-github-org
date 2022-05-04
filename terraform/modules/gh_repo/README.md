@@ -1,4 +1,8 @@
-# Usage
+# GitHub Repository Configuration
+
+## Creating from a template repository
+
+## Usage
 
 <!--- BEGIN_TF_DOCS --->
 ### Requirements
@@ -71,4 +75,3 @@ No modules.
 No outputs.
 
 <!--- END_TF_DOCS --->
-

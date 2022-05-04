@@ -32,6 +32,15 @@ resource "github_repository" "main" {
       }
     }
   }
+
+  dynamic "template" {
+    for_each = try(each.value.create_from_template, {}) != {} ? each.value.create_from_template : {}
+    content {
+      owner      = each.value.create_from_template.owner
+      repository = each.value.create_from_template.repository
+
+    }
+  }
 }
 
 resource "github_repository_environment" "main" {
@@ -89,11 +98,9 @@ resource "github_branch_protection" "main" {
     dismiss_stale_reviews           = true
     require_code_owner_reviews      = true
     required_approving_review_count = try(each.value.required_pull_request_reviews.required_approving_review_count, 2)
-    pull_request_bypassers = concat(
-      try(each.value.required_pull_request_reviews.pull_request_bypassers, null),
-      [github_team.codeowners.node_id]
-    )
-
+    pull_request_bypassers = try(concat(each.value.required_pull_request_reviews.pull_request_bypassers,
+      [github_team.codeowners.node_id, var.gh_team_admins_node_id]),
+    [github_team.codeowners.node_id, var.gh_team_admins_node_id])
   }
 
   depends_on = [

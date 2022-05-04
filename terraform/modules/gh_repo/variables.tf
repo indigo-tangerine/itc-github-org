@@ -40,7 +40,6 @@ variable "codeowners" {
 variable "github_repositories" {
   type        = map(any)
   description = "Map of Github repository variables"
-
 }
 
 variable "github_org" {
@@ -49,5 +48,6 @@ variable "github_org" {
 }
 
 variable "gh_team_admins_id" { type = string }
+variable "gh_team_admins_node_id" { type = string }
 variable "gh_team_developers_id" { type = string }
 variable "gh_team_admins_slug" { type = string }

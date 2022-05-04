@@ -9,6 +9,7 @@ module "tfm_projects" {
   ecr_put_permissions_allowed_accounts = local.tfm_projects.ecr_put_permissions_allowed_accounts
   github_org                           = var.github_org
   gh_team_admins_id                    = github_team.admins.id
+  gh_team_admins_node_id               = github_team.admins.node_id
   gh_team_admins_slug                  = github_team.admins.slug
   gh_team_developers_id                = github_team.developers.id
 }
@@ -22,19 +23,15 @@ locals {
     ecr_repositories                     = {}
     github_repositories = {
       itc-aws-base-cfg = {
-        codeowners                    = "* @${var.github_org}/tfm-projects-codeowners"
-        description                   = "ITC - Base AWS Account Config"
-        required_pull_request_reviews = { pull_request_bypassers = [github_team.admins.node_id] }
+        description = "ITC - Base AWS Account Config"
       },
       itc-tfm-project-template = {
-        codeowners                    = "* @${var.github_org}/tfm-projects-codeowners"
-        description                   = "ITC - Terraform Project Template"
-        required_pull_request_reviews = { pull_request_bypassers = [github_team.admins.node_id] }
+        description = "ITC - Terraform Project Template"
+        is_template = true
       },
       itc-tfm-module-template = {
-        codeowners                    = "* @${var.github_org}/tfm-projects-codeowners"
-        description                   = "ITC - Terraform Module Template"
-        required_pull_request_reviews = { pull_request_bypassers = [github_team.admins.node_id] }
+        description = "ITC - Terraform Module Template"
+        is_template = true
       }
     }
   }
