@@ -9,6 +9,7 @@ module "tfm_modules" {
   ecr_put_permissions_allowed_accounts = local.tfm_modules.ecr_put_permissions_allowed_accounts
   github_org                           = var.github_org
   gh_team_admins_id                    = github_team.admins.id
+  gh_team_admins_node_id               = github_team.admins.node_id
   gh_team_admins_slug                  = github_team.admins.slug
   gh_team_developers_id                = github_team.developers.id
 }
@@ -22,17 +23,18 @@ locals {
     ecr_repositories                     = {}
     github_repositories = {
       terraform-aws-itc-s3 = {
-        codeowners                    = "* @${var.github_org}/tfm-mods-codeowners"
-        description                   = "Terraform Module - AWS S3"
-        required_pull_request_reviews = { pull_request_bypassers = [github_team.admins.node_id] }
-
+        description = "Terraform Module - AWS S3"
       }
       terraform-aws-itc-cognito-user-pool = {
-        codeowners                    = "* @${var.github_org}/tfm-mods-codeowners"
-        description                   = "Terraform Module - AWS Cognito User Pool"
-        required_pull_request_reviews = { pull_request_bypassers = [github_team.admins.node_id] }
-
+        description = "Terraform Module - AWS Cognito User Pool"
       }
+      # terraform-aws-itc-test = {
+      #   description = "Test repo"
+      #   create_from_template = {
+      #     repository = "itc-tfm-module-template"
+      #     owner      = var.github_org
+      #   }
+      # }
     }
   }
 }
