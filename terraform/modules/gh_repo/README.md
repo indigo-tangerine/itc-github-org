@@ -68,7 +68,7 @@ No modules.
 | <a name="input_gh_team_admins_slug"></a> [gh\_team\_admins\_slug](#input\_gh\_team\_admins\_slug) | n/a | `string` | n/a | yes |
 | <a name="input_gh_team_developers_id"></a> [gh\_team\_developers\_id](#input\_gh\_team\_developers\_id) | n/a | `string` | n/a | yes |
 | <a name="input_github_org"></a> [github\_org](#input\_github\_org) | Github Organization name | `string` | n/a | yes |
-| <a name="input_github_repositories"></a> [github\_repositories](#input\_github\_repositories) | Map of Github repository variables | `map(any)` | n/a | yes |
+| <a name="input_github_repositories"></a> [github\_repositories](#input\_github\_repositories) | Map of Github repository variables | `any` | n/a | yes |
 | <a name="input_group_name"></a> [group\_name](#input\_group\_name) | Repositories group name | `string` | n/a | yes |
 
 ### Outputs

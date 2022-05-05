@@ -38,7 +38,7 @@ variable "codeowners" {
 }
 
 variable "github_repositories" {
-  type        = map(any)
+  type        = any
   description = "Map of Github repository variables"
 }
 
