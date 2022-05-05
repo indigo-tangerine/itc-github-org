@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [v0.5.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.5.0) - 2022-05-05 18:51:33
+
+*No description*
+
+### Feature
+
+- general:
+  - feature: CI-8 add repo templates ([daa3325](https://github.com/indigo-tangerine/itc-github-org/commit/daa3325ffc8a325b4685581096636bb98aa74934)) ([#6](https://github.com/indigo-tangerine/itc-github-org/pull/6))
+  - add template code ([c215480](https://github.com/indigo-tangerine/itc-github-org/commit/c2154800ea7b87789cc9b37a206a3aa2f2c1adbc)) ([#6](https://github.com/indigo-tangerine/itc-github-org/pull/6))
+
 ## [v0.4.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.4.0) - 2022-05-04 19:17:56
 
 *No description*
