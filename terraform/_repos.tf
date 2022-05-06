@@ -24,14 +24,20 @@ locals {
     github_repositories = {
       itc-aws-base-cfg = {
         description = "ITC - Base AWS Account Config"
-      },
+      }
       itc-tfm-project-template = {
         description = "ITC - Terraform Project Template"
         is_template = true
-      },
+      }
       itc-tfm-module-template = {
         description = "ITC - Terraform Module Template"
         is_template = true
+      }
+      itc-tfm-mvdb = {
+        description = "ITC - Terraform - Movie DB"
+        create_from_template = {
+          repository = "itc-tfm-project-template"
+        }
       }
     }
   }
