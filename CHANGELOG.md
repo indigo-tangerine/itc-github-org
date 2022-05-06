@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## [v0.6.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.6.0) - 2022-05-06 19:22:13
+
+*No description*
+
+### Feature
+
+- general:
+  - DA-1 movie db ([0991a70](https://github.com/indigo-tangerine/itc-github-org/commit/0991a7064929dad9ba38d67a6fcdbbf0975aba5b)) ([#7](https://github.com/indigo-tangerine/itc-github-org/pull/7))
+  - DA-1 create mvdb repo ([091d895](https://github.com/indigo-tangerine/itc-github-org/commit/091d895bcd9df617db5f308a001bdee6617d38db)) ([#7](https://github.com/indigo-tangerine/itc-github-org/pull/7))
+
 ## [v0.5.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.5.0) - 2022-05-05 18:51:33
 
 *No description*
