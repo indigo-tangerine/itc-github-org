@@ -36,9 +36,8 @@ resource "github_repository" "main" {
   dynamic "template" {
     for_each = try(each.value.create_from_template, {}) != {} ? each.value.create_from_template : {}
     content {
-      owner      = template.value.owner
-      repository = template.value.repository
-
+      owner      = try(each.value.create_from_template.owner, var.github_org)
+      repository = each.value.create_from_template.repository
     }
   }
 }

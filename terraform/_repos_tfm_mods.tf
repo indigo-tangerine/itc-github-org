@@ -28,13 +28,6 @@ locals {
       terraform-aws-itc-cognito-user-pool = {
         description = "Terraform Module - AWS Cognito User Pool"
       }
-      # terraform-aws-itc-test = {
-      #   description = "Test repo"
-      #   create_from_template = {
-      #     repository = "itc-tfm-module-template"
-      #     owner      = var.github_org
-      #   }
-      # }
     }
   }
 }
