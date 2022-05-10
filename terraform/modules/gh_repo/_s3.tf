@@ -19,8 +19,10 @@ resource "aws_s3_bucket_acl" "artifacts" {
 resource "aws_s3_bucket_versioning" "artifacts" {
   bucket = aws_s3_bucket.artifacts.id
   versioning_configuration {
-    status = "Enabled"
+    status     = "Enabled"
+    mfa_delete = true
   }
+
 }
 
 #tfsec:ignore:aws-s3-ignore-public-acls
