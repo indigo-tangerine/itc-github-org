@@ -39,6 +39,12 @@ locals {
           repository = "itc-tfm-project-template"
         }
       }
+      itc-dkr-mvdb = {
+        description = "ITC - Docker - Movie DB"
+        create_from_template = {
+          repository = "itc-tfm-project-template"
+        }
+      }
     }
   }
 }

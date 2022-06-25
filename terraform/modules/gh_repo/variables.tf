@@ -51,3 +51,13 @@ variable "gh_team_admins_id" { type = string }
 variable "gh_team_admins_node_id" { type = string }
 variable "gh_team_developers_id" { type = string }
 variable "gh_team_admins_slug" { type = string }
+variable "s3_mfa_delete" {
+  type        = string
+  description = "Enable / disable MFA delete on artifact bucket"
+  default     = "Enabled"
+  validation {
+    condition     = var.s3_mfa_delete == "Enabled" || var.s3_mfa_delete == "Disabled"
+    error_message = "Value must be either 'Enabled' or 'Disabled'"
+
+  }
+}
