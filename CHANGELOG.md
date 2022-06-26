@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## [v0.9.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.9.0) - 2022-06-26 14:26:34
+
+*No description*
+
+## [v0.8.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.8.0) - 2022-06-25 21:01:45
+
+*No description*
+
+## [v0.7.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.7.0) - 2022-05-10 19:07:49
+
+*No description*
+
+### Bug Fixes
+
+- general:
+  - enable mfa delete on bucket ([e9aba68](https://github.com/indigo-tangerine/itc-github-org/commit/e9aba6889ffca250061a3df836909d7c116664d4))
+
 ## [v0.6.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.6.0) - 2022-05-06 19:22:13
 
 *No description*
