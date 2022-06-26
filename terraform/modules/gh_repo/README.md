@@ -70,7 +70,6 @@ No modules.
 | <a name="input_github_org"></a> [github\_org](#input\_github\_org) | Github Organization name | `string` | n/a | yes |
 | <a name="input_github_repositories"></a> [github\_repositories](#input\_github\_repositories) | Map of Github repository variables | `any` | n/a | yes |
 | <a name="input_group_name"></a> [group\_name](#input\_group\_name) | Repositories group name | `string` | n/a | yes |
-| <a name="input_s3_mfa_delete"></a> [s3\_mfa\_delete](#input\_s3\_mfa\_delete) | Enable / disable MFA delete on artifact bucket | `string` | `"Enabled"` | no |
 
 ### Outputs
 
