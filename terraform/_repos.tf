@@ -20,7 +20,9 @@ locals {
     codeowners                           = []
     ecr_get_permissions_allowed_accounts = [data.aws_caller_identity.current.account_id]
     ecr_put_permissions_allowed_accounts = [data.aws_caller_identity.current.account_id]
-    ecr_repositories                     = {}
+    ecr_repositories = {
+      mvdb = {}
+    }
     github_repositories = {
       itc-aws-base-cfg = {
         description = "ITC - Base AWS Account Config"
