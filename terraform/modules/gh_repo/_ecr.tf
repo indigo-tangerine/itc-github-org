@@ -30,6 +30,7 @@ data "aws_iam_policy_document" "default_ecr_policy" {
   }
 }
 #tfsec:ignore:aws-ecr-repository-customer-key
+#tfsec:ignore:aws-ecr-enforce-immutable-repository
 resource "aws_ecr_repository" "repositories" {
   for_each = var.ecr_repositories
 

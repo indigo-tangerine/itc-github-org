@@ -10,4 +10,3 @@ resource "github_team_membership" "codeowners" {
   username = each.value
   role     = "member"
 }
-
