@@ -33,3 +33,5 @@ scripts/
 terraform/.terraform.lock.hcl
 
 terraform/tfm.plan
+
+terraform/modules/gh_repo/.terraform.lock.hcl

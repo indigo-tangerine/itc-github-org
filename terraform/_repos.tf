@@ -21,7 +21,12 @@ locals {
     ecr_get_permissions_allowed_accounts = [data.aws_caller_identity.current.account_id]
     ecr_put_permissions_allowed_accounts = [data.aws_caller_identity.current.account_id]
     ecr_repositories = {
-      mvdb = {}
+      mvdb = {
+        image_tag_mutability = "MUTABLE"
+      }
+      "mvdb-lambda" = {
+        image_tag_mutability = "MUTABLE"
+      }
     }
     github_repositories = {
       itc-aws-base-cfg = {
@@ -43,6 +48,12 @@ locals {
       }
       itc-dkr-mvdb = {
         description = "ITC - Docker - Movie DB"
+        create_from_template = {
+          repository = "itc-tfm-project-template"
+        }
+      }
+      itc-dkr-mvdb-lambda = {
+        description = "ITC - Docker - Movie DB Lambda Container"
         create_from_template = {
           repository = "itc-tfm-project-template"
         }

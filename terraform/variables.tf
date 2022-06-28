@@ -77,5 +77,3 @@ variable "developers_team_maintainers" {
   type    = list(any)
   default = []
 }
-
-
