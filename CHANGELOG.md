@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## [v0.11.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.11.0) - 2022-07-08 15:49:06
+
+*No description*
+
 ## [v0.10.0](https://github.com/indigo-tangerine/itc-github-org/releases/tag/v0.10.0) - 2022-06-28 18:27:52
 
 *No description*
