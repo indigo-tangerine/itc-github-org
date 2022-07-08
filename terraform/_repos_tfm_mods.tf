@@ -28,6 +28,9 @@ locals {
       terraform-aws-itc-cognito-user-pool = {
         description = "Terraform Module - AWS Cognito User Pool"
       }
+      terraform-aws-itc-ecs = {
+        description = "Terraform Module - AWS ECS Cluster, Service, Task"
+      }
     }
   }
 }
