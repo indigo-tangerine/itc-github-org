@@ -77,7 +77,7 @@ resource "github_branch_default" "main" {
 }
 
 # Setting up the branch protection settings
-
+#tfsec:ignore:github-branch_protections-require_signed_commits
 resource "github_branch_protection" "main" {
   for_each = var.github_repositories
 
@@ -106,7 +106,7 @@ resource "github_branch_protection" "main" {
     github_repository.main, github_branch_default.main
   ]
 }
-
+#tfsec:ignore:github-branch_protections-require_signed_commits
 resource "github_branch_protection" "development_branch" {
   for_each = var.github_repositories
 
@@ -132,7 +132,7 @@ resource "github_branch_protection" "development_branch" {
     github_repository.main, github_branch_default.main
   ]
 }
-
+#tfsec:ignore:github-branch_protections-require_signed_commits
 resource "github_branch_protection" "release_branches" {
   for_each = var.github_repositories
 
