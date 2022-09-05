@@ -57,19 +57,19 @@ locals {
         is_template = true
       }
       itc-tfm-mvdb = {
-        description = "ITC - Terraform - Movie DB"
+        description = "ITC - Terraform - Movie DB - Lambda"
+        create_from_template = {
+          repository = "itc-tfm-project-template"
+        }
+      },
+      itc-tfm-mvdb-ecs = {
+        description = "ITC - Terraform - Movie DB - ECS"
         create_from_template = {
           repository = "itc-tfm-project-template"
         }
       }
       itc-dkr-mvdb = {
         description = "ITC - Docker - Movie DB"
-        create_from_template = {
-          repository = "itc-tfm-project-template"
-        }
-      }
-      itc-dkr-mvdb-lambda = {
-        description = "ITC - Docker - Movie DB Lambda Container"
         create_from_template = {
           repository = "itc-tfm-project-template"
         }
@@ -85,11 +85,13 @@ locals {
     ecr_repositories                     = {}
     github_repositories = {
       itc-cdk-pnl-demo = {
-        description = "ITC - PNL CDK Demo"
+        description        = "ITC - PNL CDK Demo"
+        gitignore_template = "Node"
       }
       itc-cdk-project-template = {
-        description = "ITC - CDK Project Template"
-        is_template = true
+        description        = "ITC - CDK Project Template"
+        is_template        = true,
+        gitignore_template = "Node"
       }
     }
   }
